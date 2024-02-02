@@ -1,0 +1,366 @@
+@media (max-width:1680px){
+
+    .your__trust-inner{
+        gap: 50px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width:1648px){
+
+    .modern__inner-photo{
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width:1645px){
+
+    .webdev__inner{
+        flex-wrap: wrap;
+    }
+
+    .webdev__inner-info{
+        margin: 0 auto;
+    }
+
+    .webdev__inner-photo{
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+}
+
+@media (max-width:1638px){
+
+    .why__advantages-inner,
+    .why__consultation-inner{
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .our__inner{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .web__content-title{
+        text-align: center;
+    }
+
+}
+
+@media (max-width:1515px){
+
+    .meet__content-inner{
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .meet__inner-about{
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width:1400px){
+
+    .mission__inner{
+        flex-wrap: wrap-reverse;
+    }
+
+    .mission__inner-photo{
+        margin: 0 auto;
+    }
+
+    .adaptive__inner{
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    .adaptive__swiper-pagination{
+        text-align: center;
+    }
+
+}
+
+@media (max-width:1380px){
+
+    .touch__inner{
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+
+    .touch__inner-photo{
+        margin-top: 50px;
+    }
+
+}
+
+@media (max-width:1330px){
+
+    .your__wrapper{
+        flex-wrap: wrap;
+        gap: 60px;
+    }
+
+    .your__wrapper-info{
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .your__info-header{
+        justify-content: center;
+    }
+
+    .your__wrapper-gallery{
+        margin: 0 auto;
+    }
+
+    .strategy__inner{
+        flex-wrap: wrap;
+    }
+
+    .value__inner{
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .value__inner-info{
+        flex-basis: 950px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .value__inner-photo{
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width:1220px){
+
+    .product__item-info{
+        flex-wrap: wrap-reverse;
+    }
+
+    .product__about-title,
+    .product__about-text{
+        text-align: center;
+    }
+
+    .img__product-info{
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width:1180px){
+
+    .approach__inner{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .approach__inner-items{
+        margin-top: 50px;
+    }
+
+}
+
+@media (max-width:1150px){
+
+    .trust__content-items{
+        flex-wrap: wrap;
+    }
+
+    .your__gallery-items{
+        flex-wrap: wrap;
+    }
+
+    .visual__items{
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width:1120px){
+
+    .content__item-inner{
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        gap: 50px;
+    }
+
+}
+
+@media (max-width:1107px){
+
+    .improve__title span{
+        padding: 0;
+        background: inherit;
+        border-radius: none;
+    }
+
+}
+
+@media (max-width: 990px){
+
+    .modern__about-items{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 960px){
+    /* BURGER MENU */
+
+    .menu-btn{
+       display: inline-block;
+       width: 50px;
+       height: 50px;
+       background-color: transparent;
+       order: 1;
+       border: none;
+       cursor: pointer;
+       position: relative;
+       z-index: 50;
+   }
+
+   .logo{
+       position: relative;
+       z-index: 50;
+   }
+
+   .nav__items{
+        position: relative;
+        z-index: 50;
+   }
+
+   .btn-line{
+       position: absolute;
+       left: 0;
+       width: 100%;
+       background-color: var(--white);
+       height: 2px;
+       transition: .3s ease-in;
+   }
+
+   .btn-line:nth-child(1){
+       top: 0;
+   }
+   .btn-line:nth-child(2){
+       top: 20px;
+   }
+   .btn-line:nth-child(3){
+       top: 20px;
+   }
+   .btn-line:nth-child(4){
+       top: 40px;
+   }
+   
+   .menu-open .btn-line:nth-child(1){
+       transform: scaleX(0);
+   }
+   .menu-open .btn-line:nth-child(2){
+       transform: rotate(45deg);
+   }
+   .menu-open .btn-line:nth-child(3){
+       transform: rotate(-45deg);
+   }
+   .menu-open .btn-line:nth-child(4){
+       transform: scaleX(0);
+   }
+
+   .nav__items{
+       position: absolute;
+       z-index: 1;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       top: 0;
+       background: var(--dark-blue);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       gap: 30px;
+       transform: translateY(-100%); /*убирается с страницы*/
+       transition: .3s ease-in;
+   }
+
+   .menu-open .nav__items{
+       transform: translateY(0%); /*при клике добавляется бургер меню*/
+   }
+
+   .nav__item-link{
+    color: #fff;
+   }
+}
+
+@media (max-width: 945px){
+
+    .nav__footer{
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 930px){
+
+    .webdev__info-btns{
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 800px){
+
+    .manifesto__items-content{
+        gap: 50px;
+    }
+
+    .improve__title{
+        font-size: 80px;
+    }
+
+    .webdev__info-title{
+        font-size: 80px;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 767px){
+
+    .meet__about-items{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .mission__inner-photo{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 747px){
+
+    .webdev__photo-items{
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 600px){
+
+    .webdev__info-title{
+        font-size: 60px;
+    }
+
+}
